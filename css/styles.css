@@ -1,0 +1,172 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #444;
+  --alt-color: #af3231;
+  --ovarlay: rgba(0, 0, 0, 0.8);
+  --container-width: 90vw;
+}
+
+body {
+  font-family: 'Catamaran', sans-serif;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.nav {
+  background: none;
+  box-shadow: none;
+  padding-top: 2em;
+}
+
+.container {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  width: var(--container-width);
+}
+
+.container .brand {
+  color: var(--alt-color);
+  font-weight: lighter;
+}
+
+.menu a{
+  color: var(--primary-color);
+}
+
+.menu a:hover {
+  background-color: var(--alt-color);
+  color: #fff;
+}
+
+
+.main-info .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 130vh;
+  width: var(--container-width);
+  align-items: center;
+}
+
+.absolute-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.absolute-title h3 {
+  font-size: 10em;
+  font-weight: bold;
+  position: absolute;
+  color: rgba(0,0,0,0.1)
+}
+
+.main-info img {
+  max-width: 100%;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.main-info span {
+  color: var(--alt-color);
+}
+
+.main-info p {
+  margin-bottom: 1em;
+}
+
+.btn-info {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-info:hover {
+  background-color: var(--alt-color);
+}
+
+.overlay-section {
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.overlay {
+  height: 70vh;
+  background-color: var(--ovarlay);
+}
+
+.overlay .container{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.overlay .container h3 {
+  font-weight: lighter; 
+}
+
+.overlay .container h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.overlay .container p {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+.products {
+  height: 80vh;
+  width: 100vw;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding-top: 2em;
+}
+
+.divider {
+  width: 200px;
+  height: 5px;
+  background-color: var(--alt-color);
+  margin: 0 auto;
+}
+
+.carousel {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.carousel .carousel-item {
+  width: 500px;
+}
+
+.carousel .carousel-item img {
+  width: 700px;
+  height: 500px;
+  margin-top: -10em;
+}
+
+.carousel .carousel-item h5 {
+  text-align: center;
+}
