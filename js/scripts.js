@@ -1,9 +1,12 @@
+// scroll librery init
+  AOS.init();
+
 // navbar init
 
-document.addEventListener('DOMCOntentLoad', function() {
+document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, options);
-    console.log(instances);
+    console.log(instances)
 })
 
 // carousel init

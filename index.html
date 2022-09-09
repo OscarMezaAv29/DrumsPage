@@ -13,21 +13,22 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <nav class="nav">
-    <div class="nav-wrapper">
-      <div class="container">
-        <a href="#!" class="brand-logo brand">Xk-Drums</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Drumers</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+  <header id="home">
+    <nav class="nav">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#!" class="brand-logo brand">Xk-Drums</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Gallery</a></li>
+            <li><a href="#drummers">Drummers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-
+    </nav>
+  </header>
   <ul class="sidenav" id="mobile-demo">
     <li><a href="#">Home</a></li>
     <li><a href="#">Gallery</a></li>
@@ -40,12 +41,12 @@
     <h3>XK-Drums</h3>
   </div>
   <div class="container">
-    <div>
+    <div data-aos="fade-right" data-aos-duration="2000">
       <h1><span>Feel </span>The Beats</h1>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, doloribus. Inventore fugit facere expedita sunt optio quaerat maxime vitae facilis, architecto minus rerum, voluptatibus cupiditate quisquam soluta deserunt doloremque ab!</p>
       <button class="btn-info">Read More</button>
     </div>
-    <img src="img/bg.png" alt="xk-drums tama">
+    <img src="img/bg.png" alt="xk-drums tama" data-aos="fade-left" data-aos-duration="2000">
   </div>
 </main>
 
@@ -59,39 +60,100 @@
   </div>
 </article>
 
-<article class="products" id="products">
-  <section class="product-title">
+<article class="products" data-aos="fade-up" data-aos-duration="3000">
+  <section class="product-title" id="products">
     <h2>Our Products</h2>
     <div class="divider"></div>
   </section>
   <div class="carousel">
-    <a class="carousel-item" href="#one!">
+    <a class="carousel-item" href="#one!" alt="Sonor Drum Set">
       <img src="img/products/7.png">
       <h5>Sonor</h5>
     </a>
-    <a class="carousel-item" href="#two!">
+    <a class="carousel-item" href="#two!" alt="Roland Drum Set">
       <img src="img/products/bateria1.png">
       <h5>Roland</h5>
     </a>
-    <a class="carousel-item" href="#three!">
+    <a class="carousel-item" href="#three!" alt="Ludwig Drum Set">
       <img src="img/products/bateria3.png">
       <h5>Ludwig</h5>
     </a>
-    <a class="carousel-item" href="#four!">
+    <a class="carousel-item" href="#four!" alt="SJC Drum Set">
       <img src="img/products/bateria4.png">
       <h5>SJC</h5>
     </a>
-    <a class="carousel-item" href="#five!">
+    <a class="carousel-item" href="#five!" alt="Lumier Drum Set">
       <img src="img/products/bateria6.png">
-      <h5>Pearl</h5>
+      <h5>Lumier</h5>
     </a>
   </div>
-      
 </article>
+<svg xmlns="http://www.w3.org/2000/svg" class="skew" viewBox="0 0 1440 320"><path fill="#000" fill-opacity="1" d="M0,0L1440,288L1440,320L0,320Z"></path></svg>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<div class="our-drummers" id="drummers">
+  <h2>Our Drummers</h2>
+  <div class="divider"></div>
+  <div class="drummers">
+    <div class="gallery">
+      <a href="img/drummers/vinnie.jpeg"><img src="img/drummers/vinnie.jpeg" alt="Vinnie Colaiuta play drums"/></a>
+      <a href="img/drummers/portnoy.jpg"><img src="img/drummers/portnoy.jpg" alt="Mike Portnoy in action"/></a>
+      <a href="img/drummers/tomas'.jpg"><img src="img/drummers/tomas'.jpg" alt="Tomas Lang"/></a>
+      <a href="img/drummers/dave.jpg"><img src="img/drummers/dave.jpg" alt="Dave Weckl"/></a>
+      <a href="img/drummers/Mana-Alex-Gonzalez.jpg"><img src="img/drummers/Mana-Alex-Gonzalez.jpg" alt="Alex Gonzalez"/></a>
+      <a href="img/drummers/EricMoore.png"><img src="img/drummers/EricMoore.png" alt="Erick Moore"/></a>
+    </div>
+  </div>
+</div>
+
+<div class="contact" id="contact">
+  <form class="container-form">
+    <h2>Keep in Touch</h2>
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Subject">
+    <textarea placeholder="Message">Message</textarea>
+    <button class="btn-info">Send Message</button>
+  </form>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <div class="social-media">
+        <h3>Xk Drums</h3>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook" target="_blank"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter" target="_blank"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/"><i class="fab fa-youtube" target="_blank"></i></a>
+      </div>
+  <div class="info">
+    <h3>Company Info</h3>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Gallery</a></li>
+      <li><a href="#drummers">Drummers</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="blog""">
+    <h3>Blog</h3>
+    <ul>
+      <li><a href="#">Blog 1</a></li>
+      <li><a href="#">Blog 2</a></li>
+      <li><a href="#">Blog 3</a></li>
+      <li><a href="#">Blog 4</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/simple-lightbox.min.js"></script>
   <script src="js/materialize.min.js"></script>
   <script src="js/scripts.js"></script>
+
+  <script>
+    var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+  </script>
 </body>
 </html>
